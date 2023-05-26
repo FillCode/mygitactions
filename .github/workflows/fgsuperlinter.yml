@@ -15,4 +15,4 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SSL_CERT_SECRET: ${{ secrets.ROOT_CA }}
+#         SSL_CERT_SECRET: ${{ secrets.ROOT_CA }}
