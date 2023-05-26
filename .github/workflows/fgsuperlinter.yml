@@ -9,10 +9,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Run Super-Linter
         uses: github/super-linter@v5
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #         SSL_CERT_SECRET: ${{ secrets.ROOT_CA }}
